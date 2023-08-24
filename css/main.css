@@ -1,3 +1,6 @@
 .menu li:hover ul{
     display: block;
 }
+input[type="checkbox"]:checked ~ ul{
+    right: 0;
+}
