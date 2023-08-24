@@ -1,9 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
+tailwind.config = {
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    container: {
+      padding: {
+        DEFAULT: '10px',
+        sm:'2rem'
+      },
+    },
+    extend: {
+      screens: {
+        'xs':'475px',
+        // => @media (min-width: 450px) { ... }
+      },
+      
+    }
+  }
 }
-
