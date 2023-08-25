@@ -4,7 +4,7 @@ tailwind.config = {
     container: {
       padding: {
         DEFAULT: '10px',
-        sm:'2rem'
+        sm:'1rem'
       },
     },
     extend: {
