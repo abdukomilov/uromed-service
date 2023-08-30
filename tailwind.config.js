@@ -12,6 +12,9 @@ tailwind.config = {
         'xs':'475px',
         // => @media (min-width: 450px) { ... }
       },
+      colors: {
+        'blue-111': '#FFFFFF2E',
+      },
       
     }
   }
