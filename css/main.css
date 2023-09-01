@@ -7,3 +7,57 @@ input[type="checkbox"]:checked ~ ul{
     right: 0;
     
 }
+#chk:checked ~ div .info-text p{
+    display: block;
+}
+#chk:checked ~ div .info-text div{
+    color: #007F00;
+}
+#chk:checked ~ div .info-text i{
+    transform: rotate(180deg);
+}
+#chk1:checked ~ div .info-text1 p{
+    display: block;
+}
+#chk1:checked ~ div .info-text1 div{
+    color: #007F00;
+}
+#chk1:checked ~ div .info-text1 i{
+    transform: rotate(180deg);
+}
+#chk2:checked ~ div .info-text2 p{
+    display: block;
+}
+#chk2:checked ~ div .info-text2 div{
+    color: #007F00;
+}
+#chk2:checked ~ div .info-text2 i{
+    transform: rotate(180deg);
+}
+#chk3:checked ~ div .info-text3 p{
+    display: block;
+}
+#chk3:checked ~ div .info-text3 div{
+    color: #007F00;
+}
+#chk3:checked ~ div .info-text3 i{
+    transform: rotate(180deg);
+}
+#chk4:checked ~ div .info-text4 p{
+    display: block;
+}
+#chk4:checked ~ div .info-text4 div{
+    color: #007F00;
+}
+#chk4:checked ~ div .info-text4 i{
+    transform: rotate(180deg);
+}
+#chk5:checked ~ div .info-text5 p{
+    display: block;
+}
+#chk5:checked ~ div .info-text5 div{
+    color: #007F00;
+}
+#chk5:checked ~ div .info-text5 i{
+    transform: rotate(180deg);
+}
