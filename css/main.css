@@ -61,3 +61,16 @@ input[type="checkbox"]:checked ~ ul{
 #chk5:checked ~ div .info-text5 i{
     transform: rotate(180deg);
 }
+
+.boom {
+
+}
+.swiper-pagination-bullet{
+    border: 1px solid #007F00;
+    background: transparent !important;
+
+}
+.swiper-pagination-bullet-active{
+
+    background-color:#007F00 !important;
+}
