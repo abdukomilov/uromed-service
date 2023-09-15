@@ -68,9 +68,12 @@ input[type="checkbox"]:checked ~ ul{
 .swiper-pagination-bullet{
     border: 1px solid #007F00;
     background: transparent !important;
-
+    border-radius: 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+    color: black !important;
 }
 .swiper-pagination-bullet-active{
-
+    color: #fff !important;
     background-color:#007F00 !important;
 }
