@@ -42,7 +42,7 @@
                       <i class="ri-close-circle-line block lg:hidden"></i>
                   </label>
                       <li><a href="index.html" class="font-sans text-sm font-bold uppercase">Гарантия</a></li>
-                      <li><a href="#" class="whitespace-nowrap font-sans text-sm font-bold uppercase">Оплата и доставка</a></li>
+                      <li><a href="pay.html" class="whitespace-nowrap font-sans text-sm font-bold uppercase">Оплата и доставка</a></li>
                       <li><a href="#" class="font-sans text-sm font-bold uppercase">Отзывы</a></li>
                       <li><a href="#" class="font-sans text-sm font-bold uppercase">Акции</a></li>
                       <li><a href="#" class="font-sans text-sm font-bold uppercase">статьи</a></li>
@@ -75,14 +75,121 @@
         </div> 
       </section>
 
-      <section>
-        <div class="">
+      <section class="container m-auto p-0 grid lg:grid-cols-3 lg:gap-[15px]">
+        <div class="bg-white pt-[37px] pb-[88px] lg:pl-[49px] pl-[20px] lg:pr-[200px] pr-[20px] col-span-2">
+
+          <form action="" for="ss">
+            
+            <form action="" class="flex items-start flex-col gap-[16px] text-lg">
+              <label class="font-bold lg:text-lg text-xs" for="pay"> Способ оплаты:</label>
+              <select name="pay" id="pay" class="lg:text-lg text-xs border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] mt-[16px]" >
+                <option value="">Выберите способ оплаты</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="apple">Apple pay</option>
+              </select>
+            </form>
+  
+            <form action="" class="flex items-start flex-col gap-[16px] text-lg mt-[30px]">
+              <label class="font-bold lg:text-lg text-xs" for="pay1"> Способ доставки:</label>
+              <select name="pay" id="pay1" class="lg:text-lg text-xs border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] " >
+                <option value="">Нова Пошта</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="apple">Apple pay</option>
+              </select>
+  
+              <select name="pay" id="pay" class="lg:text-lg text-xs border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] " >
+                <option value="">В отделении</option>
+                <option value="mastercard">home</option>
+                <option value="visa">office</option>
+                <option value="apple">take a way</option>
+              </select>
+  
+              <select name="pay" id="pay" class="lg:text-lg text-xs border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] " >
+                <option value="">Выберите город</option>
+                <option value="mastercard">Dubai</option>
+                <option value="visa">indonesia</option>
+                <option value="apple">singapore</option>
+              </select>
+  
+              <select name="pay" id="pay" disabled="disabled" class="lg:text-lg text-xs border-2 w-full py-[15px] pl-[22px] " >
+                <option value="">Отделение</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="apple">Apple pay</option>
+              </select>
+            </form>
+  
+            <form action="" class="flex items-start flex-col gap-[16px] text-lg mt-[44px]">
+              <label class="font-bold lg:text-lg text-xs" for="information">Информация о получателе:</label>
+              <input type="text" placeholder="Имя" id="information" name="Имя" class="border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] lg:text-lg text-xs">
+  
+              <input type="text" placeholder="Фамилия" id="information" name="Фамилия" class="border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] lg:text-lg text-xs">
+  
+              <input type="text" placeholder="Отчество" id="information" name="Отчество" class="border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] lg:text-lg text-xs">
+  
+            </form>
+  
+            <form action="" class="flex items-start flex-col gap-[16px] text-lg mt-[44px]">
+              <label class="font-bold lg:text-lg text-xs" for="tel">Телефон:</label>
+              <input type="tel" pattern="[+]{1}[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+380 (__) ___-__-__" id="tel" name="tel" class="lg:text-lg text-xs border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D]">
+  
+              <input type="email" placeholder="Email" id="Email" name="Email" multipl !important class="border-2 w-full py-[15px] pl-[22px] rounded-[3px] border-[#2222224D] lg:text-lg text-xs">
+  
+            </form>
+  
+            <form action="" class="flex items-start flex-col gap-[16px] text-lg mt-[44px]">
+              <label class="font-bold lg:text-lg text-xs" for="add">Комментарий:</label>
+              
+              <textarea placeholder="уточнения к заказу" name="" id="add" cols="100" rows="5" class="border-2 w-full rounded-[3px] border-[#2222224D] pl-4 py-4 lg:text-lg text-xs"></textarea>
+  
+            </form>
+  
+            <p class="mt-[51px] lg:text-[24px] text-[18px]">К оплате: <span class="text-[#007F00] font-bold">2 148 ₴</span></p>
+
+            <input type="submit" value="подтвердить заказ" id="ss"  class="py-[10px] px-[31px] bg-[#F3761B] text-white font-bold mt-[44px]">
+
+          </form>
+
           
         </div>
-        <div class=""></div>
+
+        <div class="bg-white pt-[20px] pr-[23px] pb-[33px] pl-[30px] xl:h-[497px] h-[510px] lg:block hidden">
+          <h1 class="text-[28px]">Товары в корзине</h1>
+          <div class="mt-[20px] flex gap-[45px]">
+
+            <div class="w-[150px] h-[150px] shadow-lg rounded-md hover:scale-125 duration-500">
+              <img src="./order/img/Rectangle_47-removebg-preview.png" alt="" class="w-full h-full object-contain ">
+            </div>
+
+            <div class="">
+              <p class="xl:text-lg text-[12px]">Энурезный будильник  SF BEMNY</p>
+              <p class="xl:text-lg mt-[16px]">749 ₴ </p>
+              <p class="xl:text-lg mt-[18px]">1 шт</p>
+            </div>
+          </div>
+
+          <div class="mt-[28px] flex gap-[45px]">
+
+            <div class="w-[150px] h-[150px] shadow-lg rounded-md hover:scale-125 duration-500">
+              <img src="./order/img/Rectangle_471-removebg-preview.png" alt="" class="w-full h-full object-contain ">
+            </div>
+
+            <div class="">
+              <p class="xl:text-lg text-[12px]">Энурезный будильник 
+                Modo 106</p>
+              <p class="xl:text-lg text-[12px] mt-[16px]">1 399 ₴  </p>
+              <p class="xl:text-lg text-[12px] mt-[18px]">1 шт</p>
+            </div>
+          </div>
+
+          <p class="xl:text-[24px] text-[18px] mt-[26px]">Общая сумма: <span class="text-[#007F00] font-bold">2 148 ₴ </span></p>
+        </div>
+
+        
+
       </section>
-
-
 
     </main>
 
@@ -121,7 +228,7 @@
                 </ul>
 
 
-          <div class=" flex">
+          <div class=" flex lg:pt-[72px] ">
             <div class=" flex-col flex items-start">
               <a href="tel:+380 66 417 95 83" class="text-[#fff] text-lg font-sans"><i class="ri-phone-fill text-[#fff]"></i>+380 66 417 95 83</a>
               <p class="text-white mt-3 border-b-2 border-dashed mb-1">Обратный звонок</p>
