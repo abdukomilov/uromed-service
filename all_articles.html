@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all articles</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <script src="./tailwind.config.js"></script>
+    <link rel="stylesheet" href="./remix/fonts/remixicon.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body class="bg-white">
+    <div class="hidden md:block bg-gradient-to-r from-[#15545C] to-[#2FA365] py-2 text-center font-normal font-sans text-xs uppercase text-white">Доставка в любой город Украины</div>
+    <nav class="shadow-xl">
+        <div class="container  flex justify-between py-5 mx-auto items-center">
+            <a href="#"><img src="./img/UMS logo2p 1.png" alt="" class="flex-shrink-0"></a>
+            <div class="flex  flex-col items-center w-[80%]">
+                <div class="hidden lg:flex border-b items-center pb-5 lg:justify-between w-full ">
+                    <a href="tel:+380 66 417 95 83" class="text-[#007F00] text-lg font-sans"><i class="ri-phone-fill text-[#30489F]"></i>+380 66 417 95 83</a>
+                    <a href="#" class="font-sans text-sm uppercase border-b-2 border-dashed mb-1 border-[#222]">Обратный звонок</a>
+                    <p class="font-sans"><i class="ri-time-line text-[#30489F]"></i> ПН-ПТ: 10-19</p>
+                    <p class="text-[#222] text-sm font-sans">• СЕЙЧАС НА САЙТЕ: <span>23</span> ПОКУПАТЕЛЯ</p>
+                    <div class="flex items-center gap-1"><a href="#" class="text-sm opacity-50 hover:opacity-100 hover:border-b-2 border-[#007F00]">UA</a><a href="#" class="text-sm opacity-50 hover:opacity-100 hover:border-b-2 border-[#007F00]">RU</a></div>
+                </div>
+                <div class="flex lg:pt-5">
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="flex font-bold text-sm text-[#F3761B] gap-2 font-sans uppercase">Каталог <i class="ri-arrow-down-s-line"></i></a>
+                            <ul class=" hidden flex-col fixed duration-700">
+                                <li class="py-4 px-5"><a href="#" class="text-[#F3761B]">энурезные будильники</a></li>
+                                <li class="border-t border-[#ECECEC] py-4 px-5"><a href="#" class="text-[#F3761B]">пульсоксиметры</a></li>
+                                <li class="border-t border-[#ECECEC] py-4 px-5"><a href="#" class="text-[#F3761B]">термометры</a></li>
+                                <li class="border-t border-[#ECECEC] py-4 px-5"><a href="#" class="text-[#F3761B]">непромокаемые пелёнки</a></li>
+                                <li class="border-t border-[#ECECEC] py-4 px-5"><a href="#" class="text-[#F3761B]">небулайзеры</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <input type="checkbox" name="" id="check" class="hidden">
+                    <ul class="flex fixed shadow-lg items-center top-0 z-10  w-[320px] lg:w-auto gap-8 duration-500 lg:shadow-none -right-full h-screen flex-col lg:flex-row lg:static lg:h-auto bg-white">
+                        <label for="check">
+                            <i class="ri-close-circle-line block lg:hidden"></i>
+                        </label>
+                            <li><a href="#" class="font-sans text-sm font-bold uppercase">Гарантия</a></li>
+                            <li><a href="#" class="whitespace-nowrap font-sans text-sm font-bold uppercase">Оплата и доставка</a></li>
+                            <li><a href="#" class="font-sans text-sm font-bold uppercase">Отзывы</a></li>
+                            <li><a href="#" class="font-sans text-sm font-bold uppercase">Акции</a></li>
+                            <li><a href="#" class="font-sans text-sm font-bold uppercase">статьи</a></li>
+                            <li><a href="#" class="whitespace-nowrap font-sans text-sm font-bold uppercase">О нас</a></li>
+                            <li><a href="#" class="font-sans text-sm font-bold uppercase">Контакты</a></li>
+                        </ul>
+                </div>
+            </div>
+            <a href="#" class="relative">
+                <i class="ri-shopping-basket-fill text-3xl text-[#007F00]"></i>
+                <span class="w-4 inline-block h-4 flex justify-center items-center absolute rounded-full top-5 left-4 text-white bg-[#F3761B]">3</span>
+            </a>
+            <label for="check">
+                <i class="ri-menu-3-line block lg:hidden ml-5"></i>
+            </label>
+
+        </div>
+    </nav>
+    <a href="index.html"><i class="ri-question-answer-fill z-50 text-[#2FA365] sm:text-3xl text-xl fixed right-0 sm:top-[240px] top-[150px] bg-[#FFFFFF] px-4 py-1 rounded-l-lg shadow-sm"></i></a>
+    <main class="bg-[#ECECEC]">
+        <section class="pt-[26px]">
+            <div class="container mx-auto">
+                <div class="flex flex-col gap-[10px]">
+                    <div>
+                        <a href="#" class="hover:text-underline font-sans text-sm">Главная страница /</a><a href="#" class="text-[#007F00] hover:text-underline font-sans text-sm">Статьи</a>
+                    </div>
+                    <h1 class="font-bold font-sans text-[39px] text-[#007F00]">Статьи</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto swiper-wrapper">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper flex ">
+                  <div class="bg-white md:px-[50px] md:py-[50px] flex flex-col swiper-slide">
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="bg-white md:px-[50px] md:py-[50px] flex flex-col swiper-slide">
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="bg-white md:px-[50px] md:py-[50px] flex flex-col swiper-slide">
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-2 min-[500px]:gap-5 md:gap-10 p-[20px]">
+                          <img src="/img/Rectangle 5.png" alt="" class="w-[200px] h-[200px] lg:w-[348px] lg:h-[247px]">
+                          <div class="flex flex-col justify-between">
+                              <div>
+                                  <h1 class="text-sm md:text-xl font-sans font-bold">8 шагов по борьбе с энурезом. Советы родителям</h1>
+                                  <p class="font-sans text-xs md:text-base mt-[15px]">Предлагаем вашему вниманию перевод статьи <span class="hidden min-[500px]:block">Министерства здравоохранения Австралии, посвященную проблеме детского и подросткового энуреза</span> <span class="hidden md:block"> В ней доступным языком объясняется суть проблемы и методы эффективного ее решения. 
+                                    Очень классная статья.</span></p>
+                              </div>
+                              <div class="flex justify-between hidden lg:block">
+                                  <p>04.11.2020</p>
+                                  <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flex justify-between block lg:hidden px-[20px]">
+                        <p>04.11.2020</p>
+                        <p class="text-[18px] font-bold text-[#F3761B] cursor-zoom-in">читать <i class="ri-arrow-right-s-fill"></i></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              </div>
+        </section>
+        <section class=" lg:py-0 xl:py-10 mt-[31px]">
+            <div class="container mx-auto bg-[#F1F8F5]">
+                <div class="md:py-[65px] py-[24px]">
+                  <div class="">
+                    <h1 class="text-[#007F00] sm:text-[39px] text-[21px] font-bold text-center mb-[30px] md:mb-[57px]">Консультация специалиста по телефону</h1>
+                  </div>
+        
+                    <form class="flex items-center lg:flex-row flex-col justify-center gap-4 md:gap-[50px]"> 
+                      <input type="text" id="11" placeholder="Ваше имя" class="border-2 border-[#FFFFFFB2] bg-white rounded-[3px] py-[9px] pl-4 lg:w-[30%] w-[90%] bg-[#FFFFFF2E] outline-none	">
+                      <input type="number" id="11" placeholder="Ваш телефон* " class="border-2 border-[#FFFFFFB2] bg-white rounded-[3px] py-[9px] pl-4 lg:w-[30%] w-[90%] bg-[#FFFFFF2E] outline-none	">
+                      <input type="submit" value="позвоните мне" id="11" class="bg-[#F3761B] text-white text-lg font-bold px-[30px] py-[9px] rounded-[3px] hover:bg-[#FFFFFFB2] duration-500 hover:text-[#F3761B]">
+                    </form>
+        
+                    <div class="">
+                      <h3 class="text-[#007F00] sm:text-[21px] text-[18px] font-bold text-center mt-[30px] md:mt-[48px]">задайте вопрос в удобном для Вас мессенджере:</h3>
+                    </div>
+        
+                    <div class="flex items-center justify-center gap-[50px] mt-[31px]">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="md:w-[74px] md:h-[74px] w-[50px] h-[50px]" viewBox="0 0 74 74" fill="none">
+                          <g clip-path="url(#clip0_5075_383)" filter="url(#filter0_d_5075_383)">
+                            <path d="M37 2C18.7745 2 4 16.7745 4 35C4 53.2255 18.7745 68 37 68C55.2255 68 70 53.2255 70 35C70 16.7745 55.2255 2 37 2Z" fill="#40B3E0"/>
+                            <path d="M53.0574 20.9828L47.163 50.7006C47.163 50.7006 46.3388 52.7616 44.0718 51.7723L30.4701 41.3443L25.5243 38.9539L17.1985 36.151C17.1985 36.151 15.9208 35.6977 15.797 34.7085C15.6733 33.7193 17.2397 33.1835 17.2397 33.1835L50.3367 20.2001C50.3367 20.2001 53.0571 19.0049 53.0571 20.9833" fill="white"/>
+                            <path d="M29.4251 50.3664C29.4251 50.3664 29.0281 50.3293 28.5331 48.7628C28.0389 47.1966 25.5244 38.9533 25.5244 38.9533L45.5147 26.2586C45.5147 26.2586 46.6689 25.5579 46.6277 26.2586C46.6277 26.2586 46.8337 26.3824 46.2152 26.9594C45.5972 27.5366 30.5118 41.0968 30.5118 41.0968" fill="#D2E5F1"/>
+                            <path d="M35.6853 45.3422L30.3055 50.2474C30.3055 50.2474 29.8847 50.5665 29.4248 50.3665L30.455 41.2554" fill="#B5CFE4"/>
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_5075_383" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                              <feOffset dy="2"/>
+                              <feGaussianBlur stdDeviation="2"/>
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.0941176 0 0 0 0 0.439216 0 0 0 0.21 0"/>
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5075_383"/>
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5075_383" result="shape"/>
+                            </filter>
+                            <clipPath id="clip0_5075_383">
+                              <rect width="66" height="66" fill="white" transform="translate(4 2)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                      <a href="#">
+                        <img src="./about/img/viber.png" alt="" class="md:w-[74px] md:h-[74px] w-[50px] h-[50px]">
+                      </a>
+                    </div>
+          
+                </div>
+        
+              </div>
+        </section>
+    </main>
+    <footer class="bg-gradient-to-r from-[#15545C] to-[#2FA365] md:py-[95px] py-[24px]">
+        <div class="container m-auto flex md:items-center xl:flex-row flex-col justify-between xl:gap-1 gap-10">
+          <div class="footer__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="133" height="50" viewBox="0 0 133 50" fill="none">
+              <path d="M28.8353 29.1282C28.4621 28.6951 28.1023 28.2952 27.7757 27.9287C27.4559 28.3152 27.096 28.7151 26.7162 29.1282C24.4371 31.6672 21.305 35.2058 21.305 37.958C21.2983 39.6374 21.9914 41.2434 23.2042 42.3963C24.4304 43.5824 26.0697 44.2488 27.7757 44.2422C29.4817 44.2555 31.1277 43.5891 32.3472 42.3963C33.5534 41.2367 34.2398 39.6307 34.2465 37.958C34.2531 35.1991 31.1144 31.6872 28.8353 29.1282ZM27.8557 42.8094C26.5496 42.8227 25.2967 42.3229 24.3571 41.4166C23.4441 40.537 22.931 39.3241 22.9243 38.058C22.8977 37.7248 23.3042 37.4915 23.644 37.7048C23.7507 37.7781 23.8106 37.8981 23.8173 38.0313C23.8106 39.0776 24.2305 40.0838 24.9835 40.8169C25.7432 41.5499 26.7628 41.9564 27.8157 41.9498C28.0623 41.9431 28.2622 42.1364 28.2622 42.3829C28.2622 42.4562 28.2489 42.5295 28.2156 42.5962C28.1489 42.7228 28.009 42.8094 27.8557 42.8094Z" fill="white"/>
+              <path d="M38.9446 36.0523H35.9458C35.1727 36.0523 34.5463 35.4259 34.5463 34.6529C34.5463 33.8799 35.1727 33.2534 35.9458 33.2534H38.9446C39.4777 33.2534 39.9109 32.8469 39.9109 32.3538C39.9109 32.0872 39.7909 31.8407 39.591 31.6741L39.5843 31.6674C37.2119 29.7215 35.8525 26.8693 35.8525 23.8505V20.1853C35.8525 16.3402 32.8803 13.0282 28.9352 12.4751L27.7757 12.3151L26.6162 12.4751C22.6711 13.0282 19.6989 16.3402 19.6989 20.1853V23.8505C19.6989 26.8693 18.3328 29.7282 15.9538 31.6807C15.7538 31.8407 15.6406 32.0939 15.6406 32.3471C15.6406 32.8403 16.0737 33.2468 16.6068 33.2468H19.6323C20.4053 33.2468 21.0317 33.8732 21.0317 34.6462C21.0317 35.4192 20.4053 36.0457 19.6323 36.0457H16.6068C14.5277 36.0457 12.8417 34.3863 12.8417 32.3471C12.8417 31.2476 13.3281 30.2147 14.1811 29.5216C15.9071 28.1022 16.9001 26.0363 16.9001 23.8505V20.1853C16.9001 17.613 17.8597 15.1407 19.6056 13.2081C21.0451 11.6088 22.9376 10.4759 25.0235 9.94275V9.66953C25.0235 8.17679 26.2563 6.95728 27.7757 6.95728C29.2951 6.95728 30.5279 8.17679 30.5279 9.66953V9.94275C32.6138 10.4759 34.5063 11.6088 35.9458 13.2081C37.6917 15.1407 38.6514 17.6197 38.6514 20.1853V23.8505C38.6514 26.0297 39.6376 28.0955 41.3569 29.5016C42.2166 30.2013 42.7097 31.2409 42.7097 32.3538C42.7097 34.393 41.0237 36.0523 38.9446 36.0523Z" fill="white"/>
+              <path d="M42.8963 22.1712C42.15 22.1712 41.5435 21.5848 41.5435 20.8584C41.5435 17.1732 40.0641 13.708 37.3785 11.0957C36.8654 10.6025 36.8454 9.78952 37.3385 9.27639C37.3519 9.26306 37.3652 9.24974 37.3785 9.23641C37.9116 8.72328 38.758 8.72328 39.2911 9.23641C42.4898 12.3418 44.2491 16.4668 44.2491 20.8584C44.2558 21.5848 43.6494 22.1712 42.8963 22.1712Z" fill="white"/>
+              <path d="M11.1956 20.8584C11.1956 16.4668 12.9549 12.3418 16.1536 9.23641C16.6867 8.72328 17.5331 8.72328 18.0662 9.23641C18.0795 9.24974 18.0929 9.26306 18.1062 9.27639C18.5993 9.78952 18.5793 10.6025 18.0662 11.0957C15.3806 13.708 13.9012 17.1732 13.9012 20.8584C13.9012 21.5848 13.2948 22.1712 12.5484 22.1712C11.7954 22.1712 11.1889 21.5848 11.1956 20.8584Z" fill="white"/>
+              <path d="M57.7037 20.592H57.6038C57.5105 20.8585 57.3838 21.1118 57.2306 21.3517C57.0773 21.5916 56.8774 21.8048 56.6375 21.9914C56.3976 22.178 56.111 22.3246 55.7845 22.4312C55.458 22.5379 55.0781 22.5912 54.6583 22.5912C53.5787 22.5912 52.759 22.238 52.2059 21.5249C51.6528 20.8119 51.3729 19.7923 51.3729 18.4595V11.8621H54.3317V18.1929C54.3317 18.8327 54.445 19.3258 54.6716 19.6723C54.8982 20.0189 55.2847 20.1921 55.8311 20.1921C56.0577 20.1921 56.2843 20.1588 56.5109 20.0922C56.7374 20.0255 56.9374 19.9322 57.1106 19.8056C57.2839 19.679 57.4238 19.5257 57.5305 19.3391C57.6371 19.1525 57.6904 18.9326 57.6904 18.6794V11.8555H60.6492V22.3513H57.6904V20.592H57.7037Z" fill="white"/>
+              <path d="M63.4214 22.3514V11.8555H66.3802V14.1346H66.4802C66.5335 13.8414 66.6268 13.5615 66.7601 13.2816C66.8933 13.0084 67.0733 12.7685 67.2932 12.5486C67.5131 12.3353 67.773 12.1687 68.0862 12.0355C68.3928 11.9089 68.7526 11.8489 69.1658 11.8489H69.6856V14.6078H68.9459C68.0795 14.6078 67.4398 14.7211 67.0133 14.9476C66.5935 15.1742 66.3869 15.594 66.3869 16.2071V22.3447H63.4214V22.3514Z" fill="white"/>
+              <path d="M75.6566 22.5909C74.8835 22.5909 74.1905 22.4643 73.5907 22.2111C72.9843 21.9578 72.4712 21.5913 72.0513 21.1115C71.6315 20.6317 71.305 20.0519 71.0784 19.3722C70.8518 18.6925 70.7385 17.9328 70.7385 17.0931C70.7385 16.2535 70.8518 15.4938 71.0784 14.814C71.305 14.1343 71.6315 13.5612 72.0513 13.0814C72.4712 12.6082 72.9843 12.2484 73.5907 11.9885C74.1971 11.7353 74.8835 11.6086 75.6566 11.6086C76.4296 11.6086 77.116 11.7353 77.7224 11.9885C78.3288 12.2417 78.842 12.6082 79.2618 13.0814C79.6816 13.5545 80.0015 14.1343 80.2281 14.814C80.4546 15.4938 80.5679 16.2535 80.5679 17.0931C80.5679 17.9328 80.4546 18.6925 80.2281 19.3722C80.0015 20.0519 79.675 20.6317 79.2618 21.1115C78.842 21.5913 78.3288 21.9578 77.7224 22.2111C77.116 22.4643 76.4296 22.5909 75.6566 22.5909ZM75.6566 20.2519C76.243 20.2519 76.6961 20.0719 77.016 19.7121C77.3359 19.3522 77.4958 18.8391 77.4958 18.1727V16.0335C77.4958 15.3671 77.3359 14.854 77.016 14.4942C76.6961 14.1343 76.243 13.9544 75.6566 13.9544C75.0701 13.9544 74.617 14.1343 74.2971 14.4942C73.9772 14.854 73.8173 15.3671 73.8173 16.0335V18.1727C73.8173 18.8391 73.9772 19.3522 74.2971 19.7121C74.617 20.0719 75.0701 20.2519 75.6566 20.2519Z" fill="white"/>
+              <path d="M82.6738 22.3514V11.8556H85.6326V13.6349H85.7526C85.9392 13.0751 86.2591 12.602 86.7122 12.2022C87.1654 11.809 87.7851 11.6157 88.5715 11.6157C89.2912 11.6157 89.9043 11.7957 90.4107 12.1555C90.9172 12.5154 91.2837 13.0418 91.5103 13.7349H91.5703C91.6636 13.4417 91.8035 13.1684 92.0034 12.9019C92.1967 12.642 92.4299 12.4221 92.7098 12.2355C92.9897 12.0489 93.3029 11.9023 93.6494 11.7823C93.996 11.669 94.3691 11.6157 94.769 11.6157C95.7819 11.6157 96.5549 11.9756 97.1014 12.6953C97.6412 13.415 97.9077 14.4413 97.9077 15.7741V22.3514H94.9489V16.014C94.9489 14.6812 94.4691 14.0148 93.5095 14.0148C93.0697 14.0148 92.6698 14.1414 92.31 14.3946C91.9501 14.6478 91.7702 15.0344 91.7702 15.5541V22.3514H88.8114V16.014C88.8114 14.6812 88.3316 14.0148 87.3719 14.0148C87.1587 14.0148 86.9454 14.0414 86.7389 14.1014C86.5323 14.1614 86.3457 14.2613 86.1791 14.3879C86.0125 14.5212 85.8792 14.6878 85.7792 14.8811C85.6793 15.0743 85.626 15.3009 85.626 15.5475V22.3448H82.6738V22.3514Z" fill="white"/>
+              <path d="M104.925 22.5913C104.125 22.5913 103.412 22.4647 102.786 22.2048C102.159 21.9449 101.626 21.5784 101.2 21.1053C100.766 20.6321 100.44 20.0524 100.22 19.3726C100 18.6929 99.8867 17.9332 99.8867 17.0935C99.8867 16.2672 99.9933 15.5208 100.207 14.8411C100.42 14.168 100.74 13.5883 101.16 13.1151C101.579 12.6353 102.093 12.2621 102.712 12.0022C103.325 11.7423 104.025 11.6157 104.811 11.6157C105.678 11.6157 106.424 11.7623 107.044 12.0555C107.664 12.3488 108.17 12.7419 108.563 13.2351C108.956 13.7282 109.243 14.3013 109.423 14.9411C109.603 15.5875 109.69 16.2672 109.69 16.9736V17.8532H102.952V18.0132C102.952 18.6996 103.139 19.246 103.512 19.6459C103.885 20.0524 104.472 20.2523 105.271 20.2523C105.884 20.2523 106.384 20.1323 106.771 19.8858C107.157 19.6392 107.517 19.346 107.85 19.0061L109.33 20.852C108.863 21.3985 108.25 21.825 107.497 22.1382C106.737 22.4381 105.884 22.5913 104.925 22.5913ZM104.865 13.7949C104.265 13.7949 103.799 13.9948 103.452 14.3879C103.112 14.7811 102.946 15.3076 102.946 15.954V16.1139H106.624V15.934C106.624 15.2943 106.477 14.7811 106.191 14.3813C105.904 13.9881 105.465 13.7949 104.865 13.7949Z" fill="white"/>
+              <path d="M118.22 20.5919H118.12C118.04 20.8717 117.913 21.1383 117.74 21.3849C117.567 21.6314 117.353 21.8447 117.113 22.0246C116.867 22.2045 116.587 22.3445 116.274 22.4444C115.961 22.5444 115.634 22.5977 115.307 22.5977C113.975 22.5977 112.968 22.1312 112.289 21.1916C111.609 20.252 111.269 18.8925 111.269 17.0999C111.269 15.314 111.609 13.9545 112.289 13.0215C112.968 12.0886 113.975 11.6221 115.307 11.6221C115.987 11.6221 116.587 11.8087 117.12 12.1819C117.647 12.5551 117.98 13.0349 118.126 13.6213H118.226V7.56372H121.185V22.3578H118.22V20.5919ZM116.28 20.192C116.84 20.192 117.3 20.0587 117.667 19.7855C118.033 19.5123 118.22 19.1324 118.22 18.6526V15.5539C118.22 15.0741 118.033 14.7009 117.667 14.421C117.3 14.1478 116.834 14.0145 116.28 14.0145C115.721 14.0145 115.254 14.2144 114.888 14.6009C114.521 14.9941 114.335 15.5272 114.335 16.1869V18.0062C114.335 18.6726 114.514 19.2057 114.888 19.5923C115.254 19.9921 115.721 20.192 116.28 20.192Z" fill="white"/>
+              <path d="M55.0647 40.2505C54.0518 40.2505 53.1988 40.0839 52.5057 39.764C51.8127 39.4375 51.1929 38.9777 50.6465 38.3779L52.3858 36.6186C52.759 37.0318 53.1721 37.3583 53.6253 37.5982C54.0784 37.8381 54.5916 37.9581 55.1647 37.9581C55.7511 37.9581 56.1576 37.8715 56.3842 37.6915C56.6108 37.5116 56.7241 37.2717 56.7241 36.9585C56.7241 36.4654 56.3709 36.1721 55.6645 36.0788L54.5249 35.9389C52.1659 35.6457 50.9863 34.5661 50.9863 32.7002C50.9863 32.1937 51.0796 31.7339 51.2796 31.3074C51.4728 30.8876 51.746 30.5277 52.0992 30.2279C52.4524 29.928 52.8789 29.6947 53.3787 29.5281C53.8785 29.3615 54.4383 29.2749 55.0714 29.2749C55.6178 29.2749 56.0976 29.3149 56.5241 29.3815C56.944 29.4548 57.3172 29.5615 57.6437 29.7014C57.9702 29.8413 58.2701 30.0146 58.5433 30.2212C58.8166 30.4278 59.0831 30.661 59.3497 30.9076L57.6437 32.6536C57.3105 32.3204 56.9373 32.0605 56.5175 31.8672C56.0976 31.6739 55.6645 31.5806 55.2247 31.5806C54.7182 31.5806 54.3583 31.6606 54.1451 31.8206C53.9318 31.9805 53.8252 32.1937 53.8252 32.4603C53.8252 32.7402 53.8985 32.9601 54.0585 33.1134C54.2117 33.2666 54.4983 33.3799 54.9248 33.4466L56.1043 33.6065C58.41 33.913 59.5629 34.966 59.5629 36.7652C59.5629 37.2717 59.4563 37.7382 59.243 38.1647C59.0298 38.5912 58.7233 38.9644 58.3367 39.2776C57.9436 39.5908 57.4704 39.8373 56.9173 40.0106C56.3575 40.1639 55.7444 40.2505 55.0647 40.2505Z" fill="white"/>
+              <path d="M65.9603 40.2505C65.1606 40.2505 64.4476 40.1239 63.8212 39.864C63.1948 39.6041 62.6617 39.2376 62.2352 38.7644C61.802 38.2913 61.4755 37.7115 61.2556 37.0318C61.0357 36.3521 60.9224 35.5924 60.9224 34.7527C60.9224 33.9264 61.029 33.18 61.2422 32.5003C61.4555 31.8272 61.7687 31.2474 62.1952 30.7743C62.615 30.2945 63.1281 29.9213 63.7479 29.6614C64.361 29.4015 65.0607 29.2749 65.847 29.2749C66.7133 29.2749 67.4531 29.4215 68.0728 29.7147C68.6925 30.0079 69.199 30.4011 69.5922 30.8943C69.9854 31.3874 70.2719 31.9605 70.4518 32.6002C70.6318 33.2466 70.7184 33.9264 70.7184 34.6328V35.5124H63.9811V35.6723C63.9811 36.3587 64.1677 36.9052 64.5409 37.305C64.9141 37.7115 65.5005 37.9114 66.3002 37.9114C66.9133 37.9114 67.4131 37.7915 67.7996 37.5449C68.1861 37.2984 68.5459 37.0051 68.8791 36.6653L70.3585 38.5112C69.8921 39.0577 69.279 39.4842 68.526 39.7974C67.7729 40.0972 66.9199 40.2505 65.9603 40.2505ZM65.9003 31.454C65.3006 31.454 64.8341 31.654 64.4942 32.0471C64.1544 32.4403 63.9878 32.9668 63.9878 33.6132V33.7731H67.6663V33.5932C67.6663 32.9534 67.5197 32.4403 67.2331 32.0405C66.9399 31.6473 66.5001 31.454 65.9003 31.454Z" fill="white"/>
+              <path d="M72.8176 40.0105V29.5147H75.7764V31.7938H75.8764C75.9297 31.5006 76.023 31.2207 76.1563 30.9408C76.2895 30.6676 76.4695 30.4277 76.6894 30.2078C76.9093 29.9945 77.1692 29.8279 77.4757 29.6947C77.7822 29.568 78.1421 29.5081 78.5553 29.5081H79.075V32.267H78.3353C77.469 32.267 76.8226 32.3802 76.4028 32.6068C75.983 32.8334 75.7697 33.2532 75.7697 33.8663V40.0039H72.8176V40.0105Z" fill="white"/>
+              <path d="M83.2733 40.011L79.8347 29.5151H82.7536L84.053 33.7534L85.0326 37.5519H85.1926L86.1722 33.7534L87.4317 29.5151H90.2306L86.7919 40.011H83.2733Z" fill="white"/>
+              <path d="M93.2695 28.3954C92.6697 28.3954 92.2299 28.2621 91.9566 27.9822C91.6834 27.709 91.5435 27.3624 91.5435 26.9293V26.4894C91.5435 26.063 91.6767 25.7164 91.9566 25.4365C92.2299 25.1633 92.6697 25.03 93.2695 25.03C93.8693 25.03 94.3024 25.17 94.5757 25.4365C94.8489 25.7098 94.9888 26.063 94.9888 26.4894V26.9293C94.9888 27.3558 94.8489 27.709 94.5757 27.9822C94.3024 28.2554 93.8693 28.3954 93.2695 28.3954ZM91.79 29.5149H94.7489V40.0108H91.79V29.5149Z" fill="white"/>
+              <path d="M101.746 40.2505C100.96 40.2505 100.26 40.1239 99.647 39.864C99.0339 39.6041 98.5208 39.2376 98.1076 38.7644C97.6945 38.2913 97.3813 37.7115 97.168 37.0318C96.9548 36.3521 96.8481 35.5924 96.8481 34.7527C96.8481 33.913 96.9548 33.16 97.168 32.487C97.3813 31.8139 97.6945 31.2341 98.1076 30.7543C98.5208 30.2745 99.0339 29.908 99.647 29.6548C100.26 29.4015 100.96 29.2749 101.746 29.2749C102.812 29.2749 103.699 29.5148 104.412 29.9946C105.125 30.4744 105.631 31.1475 105.944 32.0138L103.545 33.0534C103.452 32.6536 103.259 32.3137 102.966 32.0338C102.672 31.7539 102.266 31.614 101.746 31.614C101.146 31.614 100.693 31.8139 100.387 32.2004C100.08 32.5936 99.9269 33.1267 99.9269 33.7931V35.7523C99.9269 36.4187 100.08 36.9452 100.387 37.3317C100.693 37.7182 101.146 37.9114 101.746 37.9114C102.279 37.9114 102.699 37.7715 103.012 37.4783C103.325 37.1917 103.552 36.8186 103.705 36.3454L106.004 37.345C105.658 38.3446 105.118 39.0776 104.392 39.5441C103.665 40.0173 102.786 40.2505 101.746 40.2505Z" fill="white"/>
+              <path d="M112.122 40.2505C111.322 40.2505 110.609 40.1239 109.983 39.864C109.356 39.6041 108.823 39.2376 108.397 38.7644C107.964 38.2913 107.637 37.7115 107.417 37.0318C107.197 36.3521 107.084 35.5924 107.084 34.7527C107.084 33.9264 107.191 33.18 107.404 32.5003C107.617 31.8272 107.937 31.2474 108.357 30.7743C108.777 30.2945 109.29 29.9213 109.91 29.6614C110.523 29.4015 111.222 29.2749 112.009 29.2749C112.875 29.2749 113.621 29.4215 114.241 29.7147C114.861 30.0079 115.367 30.4011 115.761 30.8943C116.154 31.3874 116.44 31.9605 116.62 32.6002C116.8 33.2466 116.887 33.9264 116.887 34.6328V35.5124H110.149V35.6723C110.149 36.3587 110.336 36.9052 110.709 37.305C111.082 37.7115 111.669 37.9114 112.468 37.9114C113.082 37.9114 113.581 37.7915 113.968 37.5449C114.354 37.2984 114.714 37.0051 115.047 36.6653L116.527 38.5112C116.06 39.0577 115.447 39.4842 114.694 39.7974C113.935 40.0972 113.082 40.2505 112.122 40.2505ZM112.062 31.454C111.462 31.454 110.996 31.654 110.649 32.0471C110.309 32.4403 110.143 32.9668 110.143 33.6132V33.7731H113.821V33.5932C113.821 32.9534 113.675 32.4403 113.388 32.0405C113.102 31.6473 112.662 31.454 112.062 31.454Z" fill="white"/>
+            </svg>
+          </div>
+  
+              <ul class="flex md:flex-row flex-col gap-6 h-auto text-white">
+                  <li> <a href="#" class="flex font-bold text-sm text-[#F3761B] gap-2 font-sans uppercase">Каталог <i class="ri-arrow-down-s-line"></i></a> </li>
+                      <li><a href="#" class="font-sans text-sm font-bold uppercase">Гарантия</a></li>
+                      <li><a href="#" class="whitespace-nowrap font-sans text-sm font-bold uppercase">Оплата и доставка</a></li>
+                      <li><a href="#" class="font-sans text-sm font-bold uppercase">Отзывы</a></li>
+                      <li><a href="#" class="font-sans text-sm font-bold uppercase">Акции</a></li>
+                      <li><a href="#" class="whitespace-nowrap font-sans text-sm font-bold uppercase">О нас</a></li>
+                      <li><a href="contact.html" class="font-sans text-sm font-bold uppercase">Контакты</a></li>
+                  </ul>
+  
+  
+            <div class=" flex">
+              <div class=" flex-col flex items-start">
+                <a href="tel:+380 66 417 95 83" class="text-[#fff] text-lg font-sans"><i class="ri-phone-fill text-[#fff]"></i>+380 66 417 95 83</a>
+                <p class="text-white mt-3 border-b-2 border-dashed mb-1">Обратный звонок</p>
+                <p class="font-sans text-white"><i class="ri-time-line text-[#fff]"></i> ПН-ПТ: 10-19</p>
+              </div>
+            </div>
+  
+          <a href="about.html" class=" flex-col flex">
+            <i class="ri-arrow-up-double-line text-white text-3xl"></i>
+            <p class="text-white text-sm font-normal drop-shadow-md">вверх</p>
+          </a>
+  
+        </div>
+      </footer>
+      <h3 class="bg-gradient-to-r from-[#15545C] to-[#2FA365] text-white text-[12px] font-light uppercase text-center">All rights reserved © 2021, Uromedservice</h3>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+          },
+        });
+      </script>
+</body>
+</html>
